@@ -1,6 +1,6 @@
 {
   "name": "graphql-tools-type-uuid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "UUID scalar type for graphql-tools",
   "main": "dist/index.js",
   "directories": {
