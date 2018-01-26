@@ -1,5 +1,8 @@
 # graphql-tools-type-uuid
 
+[![Build Status](https://travis-ci.org/up9cloud/graphql-tools-type-uuid.svg?branch=master)](https://travis-ci.org/up9cloud/graphql-tools-type-uuid)
+[![Coverage Status](https://coveralls.io/repos/github/up9cloud/graphql-tools-type-uuid/badge.svg?branch=master)](https://coveralls.io/github/up9cloud/graphql-tools-type-uuid?branch=master)
+
 UUID scalar type for [graphql-tools](https://github.com/apollographql/graphql-tools)
 
 ## Usage
