@@ -8,6 +8,7 @@ UUID scalar type for [graphql-tools](https://github.com/apollographql/graphql-to
 ## Usage
 
 ```js
+import { makeExecutableSchema } from 'graphql-tools'
 import UUID from 'graphql-tools-type-uuid'
 
 let typeDefs = [`
