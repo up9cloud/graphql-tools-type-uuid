@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- node
+- 8
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key:
+    secure: a7IPd3BxH0cH+vzQavyI5kzdaL5RMHajBGKtoglvbrVGgK1ZuM2Pbl4+LdXOnawwht02HOX7Nf7rw2Ypm4lTgCfKhrkCBsOrPsigzWyyUaM62t+Xrh56Ey3OJE6YtaQoWFB4j33kb4zUMxk9LEsyjAVrevdAJIMs0B7S0DcMuV1s0ZXj7fwnrOreX0pN5z79n3nZzWUvF2lrobH+WOriCNvwrYcwtBM2vDdh5noikMwnv0oqWGDTTOcWvgh6lNGeQLusKwWdkvHke3zX+xHWZKlYajJNuhlfdajNU/myk4dfwem2QLsI+BJP2UzP3Ljg3qcD0P4/gc6/Zkh88zxhU3LZV8bjB8WQ8YpucyYbJtKKa08a4AT31MIKySbi2vTbhVIyzCmGrJktCa14r1qFv3j2aFjg26MXv3lO+q2/UWkkf0Oc6Th+13yQxgOgM+kHAvWKVXXDl1Qb7rBSpgoAqRLJPXI+mGnOGTdopSAPxUWp97vicBN0sS6GYOdpRNaZCuNPwtHz6Vm5vbyIDCwea/xQYM9q3OYm+Q1AHK7tC71LddHU5fBOIHhbJtYX9Pv0ipoTf6n/m8X/JOMw4WorWLQbdCamFOZwl8lmRBKsfipdbRpYCJh9OFAMuigkqQv1z6J4Szpr4VGAUC2aNiun9l659aCuC+owb9gN054bMKc=
+  on:
+    repo: up9cloud/graphql-tools-type-uuid
+    branch: master
