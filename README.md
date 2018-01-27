@@ -28,7 +28,7 @@ let schema = makeExecutableSchema({ typeDefs, resolvers })
 export default schema
 ```
 
-## Minimum module files
+## Minimum amount of module files
 
 ```console
 $ tree ./node_modules/graphql-tools-type-uuid
