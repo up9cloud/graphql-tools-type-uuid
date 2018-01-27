@@ -62,7 +62,12 @@ describe('UUID', () => {
       for (let uuid of whiteList) {
         let { data } = await graphql(
           schema,
-          `query { value(uuid: ${JSON.stringify(uuid)}) }`
+          `query ($uuid: UUID) {
+            value(uuid: $uuid)
+          }`,
+          null,
+          null,
+          { uuid }
         )
         expect(data.value).to.be.equal(uuid)
       }
@@ -71,7 +76,12 @@ describe('UUID', () => {
       for (let uuid of blackList) {
         let data = await graphql(
           schema,
-          `query { value(uuid: ${JSON.stringify(uuid)}) }`
+          `query ($uuid: UUID) {
+            value(uuid: $uuid)
+          }`,
+          null,
+          null,
+          { uuid }
         )
         expect(data.data).to.be.equal(undefined)
         // expect(data.data.value).to.be.equal(undefined)
@@ -85,12 +95,7 @@ describe('UUID', () => {
       for (let uuid of whiteList) {
         let { data } = await graphql(
           schema,
-          `query ($uuid: UUID) {
-            value(uuid: $uuid)
-          }`,
-          null,
-          null,
-          { uuid }
+          `query { value(uuid: ${JSON.stringify(uuid)}) }`
         )
         expect(data.value).to.be.equal(uuid)
       }
@@ -99,12 +104,7 @@ describe('UUID', () => {
       for (let uuid of blackList) {
         let data = await graphql(
           schema,
-          `query ($uuid: UUID) {
-            value(uuid: $uuid)
-          }`,
-          null,
-          null,
-          { uuid }
+          `query { value(uuid: ${JSON.stringify(uuid)}) }`
         )
         expect(data.data).to.be.equal(undefined)
         // expect(data.data.value).to.be.equal(undefined)
